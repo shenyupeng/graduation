@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+	<style name="AppBaseTheme" parent="android:Theme.Light">
+		<!--Theme customizations available in newer API levels can go in
+			res/values-vXX/styles.xml, while customizations related to
+			backward-compatibility can go here.-->
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+		<!-- 侧滑返回所必须的样式，否则下层Activity黑屏 -->
+		<item name="android:windowIsTranslucent">true</item>
+	</style>
+
+	<style name="text_sldingTabTitle">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:paddingTop">12dp</item>
+		<item name="android:paddingBottom">12dp</item>
+		<item name="android:paddingRight">15dp</item>
+		<item name="android:paddingLeft">15dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/sliding_title_selector</item>
+		<item name="android:background">@drawable/sliding_title_selector</item>
+	</style>
+
+	<!-- 侧滑返回相关样式 -->
+	<style name="SwipeBackLayout">
+		<item name="edge_size">50dip</item>
+		<item name="shadow_left">@drawable/shadow_left</item>
+		<item name="shadow_right">@drawable/shadow_right</item>
+		<item name="shadow_bottom">@drawable/shadow_bottom</item>
+	</style>
+
+	<style name="update_Dialog" parent="android:Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowIsTranslucent">false</item>
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+
+	<style name="divide_ling_2">
+		<item name="android:layout_height">2dp</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:background">#E1E1E1</item>
+	</style>
+</resources>

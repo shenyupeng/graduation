@@ -1,0 +1,7 @@
+应用图标大小存放位置：
+
+	drawable-mdpi 	：	48 * 48
+	drawable-hdpi   ：	72 * 72
+	drawable-xhdpi  :	96 * 96
+	drawable-xxhdpi	:	144 * 144
+	drawable-xxxhdpi:	192 * 192

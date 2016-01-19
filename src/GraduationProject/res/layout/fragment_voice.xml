@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res/com.ststudy.client.android.graduationproject"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="#FFFFFF"
+		>
+
+	<com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip
+			android:id="@+id/slidingTabVoice"
+			app:slidingBlock="@drawable/image_sliding_block"
+			android:background="@drawable/sliding_tab_strip_background"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+
+		<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+			<TextView
+					android:text="我在测试"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="我在测试"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="我在测试"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="我在测试"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="我在测试"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="我在测试"
+					style="@style/text_sldingTabTitle"
+					/>
+
+		</LinearLayout>
+	</com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip>
+
+	<android.support.v4.view.ViewPager
+			android:id="@+id/vp4Voice"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+
+	<TextView
+			android:text="音频列表"
+			android:textSize="40sp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			/>
+</LinearLayout>

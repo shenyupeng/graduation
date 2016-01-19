@@ -1,0 +1,22 @@
+github操作：
+
+	create a new repository on the command line：
+
+		echo "# graduation" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git remote add origin git@github.com:shenyupeng/graduation.git
+		git push -u origin master
+
+	push an existing repository from the command line
+
+		git remote add origin git@github.com:shenyupeng/graduation.git
+		git push -u origin master
+
+使用Volley源码开发遇到的问题:
+	因为AS已经舍弃了HttpClient，所以源码编译不通过
+		解决方案：
+			进入目录Android\SDK\platforms\android-23\optional下，手动添加org.apache.http.legacy.jar到AS的libs目录下。
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:baselineAligned="false"
+			  android:background="@color/bottom_gray"
+		>
+
+	<RelativeLayout
+			android:id="@+id/rlayVoice"
+			android:layout_weight="1"
+			android:layout_width="@dimen/normal_dp_0"
+			android:layout_height="match_parent"
+			android:clickable="true"
+			>
+
+		<Button
+				android:id="@+id/btnVoice"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:background="@drawable/tab_bottom_voice_selector"
+				android:clickable="false"
+				/>
+	</RelativeLayout>
+
+	<RelativeLayout
+			android:id="@+id/rlayVideo"
+			android:layout_weight="1"
+			android:layout_width="@dimen/normal_dp_0"
+			android:layout_height="match_parent"
+			android:clickable="true"
+			>
+
+		<Button
+				android:id="@+id/btnVideo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:background="@drawable/tab_bottom_video_selector"
+				android:clickable="false"
+				/>
+	</RelativeLayout>
+
+	<RelativeLayout
+			android:id="@+id/rlayUser"
+			android:layout_weight="1"
+			android:layout_width="@dimen/normal_dp_0"
+			android:layout_height="match_parent"
+			android:clickable="true"
+			>
+
+		<Button
+				android:id="@+id/btnUser"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:background="@drawable/tab_bottom_user_selector"
+				android:clickable="false"
+				/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="normal_dp_0">0dp</dimen>
+	<dimen name="normal_dp_5">5dp</dimen>
+	<dimen name="normal_dp_8">8dp</dimen>
+	<dimen name="normal_dp_15">15dp</dimen>
+	<dimen name="normal_dp_20">20dp</dimen>
+	<dimen name="normal_dp_40">40dp</dimen>
+	<dimen name="text_size_20">20sp</dimen>
+	<dimen name="text_size_15">15sp</dimen>
+</resources>

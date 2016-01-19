@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">播放器</string>
+	<!--底部导航文字-->
+	<string name="bottom_voice">音频</string>
+	<string name="bottom_video">视频</string>
+	<string name="bottom_user">我的</string>
+	<!--版本更新对话框-->
+	<string name="dialog_update_title">更新提示</string>
+	<string name="text_update_force">强制升级</string>
+	<string name="text_update_back">后台升级</string>
+	<string name="text_no_tip">不再提示</string>
+</resources>
