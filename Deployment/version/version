@@ -1,7 +1,7 @@
 {
 	"new_version":{
 		"down_url":"https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/apk/GraduationProject.apk",
-		"vc":1000,
+		"vc":1001,
 		"is_force":false,
 		"desc":"1.视频播放界面大升级视频播放界面大升级\r\n2.添加Emoji表情\r\n3.添加来自设备信息\r\n4.界面细节优化\r\n5.修复已知BUG",
 		"size":"31.9M"

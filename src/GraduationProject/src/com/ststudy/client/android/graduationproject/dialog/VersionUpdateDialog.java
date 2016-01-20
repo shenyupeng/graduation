@@ -4,16 +4,17 @@ import android.app.Dialog;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RemoteViews;
 import android.widget.TextView;
 import com.ststudy.client.android.graduationproject.Constants;
-import com.ststudy.client.android.graduationproject.L;
 import com.ststudy.client.android.graduationproject.R;
+import com.ststudy.client.android.graduationproject.model.AppInfo;
 import com.ststudy.client.android.graduationproject.model.NewVersion;
+import com.ststudy.client.android.utils.AppVersionUtils;
 import com.ststudy.client.android.utils.multithreaddownload.CallBack;
 import com.ststudy.client.android.utils.multithreaddownload.DownloadException;
 import com.ststudy.client.android.utils.multithreaddownload.DownloadManager;
@@ -33,12 +34,32 @@ public class VersionUpdateDialog extends Dialog implements View.OnClickListener 
     private TextView mTvNoTip;
     private LinearLayout mLayForceUpdate;
     private int lastPositon = 0;
+    private NotificationManager mNotiManager;
+    private NotificationCompat.Builder mNotiCompat;
+    private RemoteViews mNotiRemoteView;
+    private final int NOTI_APP_UPDATE = 7;
+    private AppInfo mUpdateApp;
+
 
     public VersionUpdateDialog(Context context, NewVersion pNewVersion) {
         super(context, R.style.update_Dialog);
         setContentView(R.layout.dialog_update);
+        initData();
         initView(pNewVersion);
         setListener();
+    }
+
+    /**
+     * 初始化数据
+     */
+    private void initData() {
+        mNotiManager = (NotificationManager) getContext().getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotiCompat = new NotificationCompat.Builder(getContext()).setTicker("版本升级").setSmallIcon(R.drawable.ic_launcher);
+        mNotiRemoteView = new RemoteViews(getContext().getPackageName(), R.layout.notification_update_app);
+        mNotiCompat.setContent(mNotiRemoteView);
+        mUpdateApp = new AppInfo();
+        mUpdateApp.setUrl(Constants.APP_DOWNLOAD_URL);
+        mUpdateApp.setName("GraduationProject.apk");
     }
 
     /**
@@ -74,14 +95,19 @@ public class VersionUpdateDialog extends Dialog implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tvDownloadBack:
-                String TAG = "updateApp";
-                DownloadRequest request = new DownloadRequest.Builder().setTitle("GraduationProject.apk").setUri("https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/apk/GraduationProject.apk").setFolder(new File(Constants.APP_DOWNLOAD_PATH)).build();
-                final NotificationManager nm = (NotificationManager) getContext().getSystemService(Context.NOTIFICATION_SERVICE);
-                final NotificationCompat.Builder nc = new NotificationCompat.Builder(getContext()).setSmallIcon(R.drawable.ic_launcher).setProgress(100, 0, true).setContentTitle("版本升级").setContentText("当前进度为：").setShowWhen(true);
-                DownloadManager.getInstance().download(request, TAG, new CallBack() {
+                mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
+                File _filePath = new File(Constants.APP_DOWNLOAD_PATH + mUpdateApp.getName());
+                if (_filePath.exists()) {
+                    _filePath.delete();
+                }
+                DownloadRequest _request = new DownloadRequest.Builder().setTitle(mUpdateApp.getName()).setUri(mUpdateApp.getUrl()).setFolder(new File(Constants.APP_DOWNLOAD_PATH)).build();
+                DownloadManager.getInstance().download(_request, mUpdateApp.getUrl(), new CallBack() {
                     @Override
                     public void onStarted() {
-
+                        mNotiRemoteView.setProgressBar(R.id.pbUpdateProgress, 100, 0, false);
+                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "正在连接下载");
+                        mNotiRemoteView.setTextViewText(R.id.tvUpdateText, "版本更新");
+                        mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
                     }
 
                     @Override
@@ -96,57 +122,54 @@ public class VersionUpdateDialog extends Dialog implements View.OnClickListener 
 
                     @Override
                     public void onProgress(long finished, long total, int progress) {
+                        mNotiRemoteView.setProgressBar(R.id.pbUpdateProgress, 100, progress, false);
+                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "当前进度为：" + progress + "%");
+                        mNotiRemoteView.setTextViewText(R.id.tvUpdateText, "版本更新");
                         if ((progress - lastPositon) > 1) {
-                            nc.setProgress(100, progress, false);
-                            nc.setColor(Color.BLUE);
-                            nc.setSmallIcon(R.drawable.ic_launcher);
-                            nc.setContentTitle("版本升级");
-                            nc.setContentText("当前进度为：" + progress + " %");
-                            nm.notify(7, nc.build());
-                            lastPositon = progress;
-                        }
-                        if (100 == progress) {
-                            L.d("我完了");
-
-                            //安装应用
-                            String fileName = Constants.APP_DOWNLOAD_PATH + "GraduationProject.apk";
-                            Intent intent = new Intent(Intent.ACTION_VIEW);
-                            intent.setDataAndType(Uri.fromFile(new File(fileName)), "application/vnd.android.package-archive");
-                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            getContext().startActivity(intent);
+                            mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
                         }
                     }
 
                     @Override
                     public void onCompleted() {
-                        nm.cancel(7);
+                        if (mNotiCompat != null) {
+                            mNotiManager.cancel(NOTI_APP_UPDATE);
+                        }
+                        //安装应用
+                        String fileName = Constants.APP_DOWNLOAD_PATH + mUpdateApp.getName();
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setDataAndType(Uri.fromFile(new File(fileName)), "application/vnd.android.package-archive");
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        getContext().startActivity(intent);
                     }
 
                     @Override
                     public void onDownloadPaused() {
-
+                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "暂停下载");
+                        mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
                     }
 
                     @Override
                     public void onDownloadCanceled() {
-                        nm.cancel(7);
+                        if (mNotiCompat != null) {
+                            mNotiManager.cancel(NOTI_APP_UPDATE);
+                        }
                     }
 
                     @Override
                     public void onFailed(DownloadException e) {
-
+                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "下载失败");
+                        mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
                     }
                 });
-                nm.notify(7, nc.build());
-                L.d("后台更新软件");
                 this.dismiss();
                 break;
             case R.id.tvNoTip:
-                L.d("不在提示更新");
+                AppVersionUtils.setNoTipUpdateApp(getContext());
                 this.dismiss();
                 break;
             case R.id.tvForceUpdate:
-                L.d("强制更新");
+
                 break;
         }
     }

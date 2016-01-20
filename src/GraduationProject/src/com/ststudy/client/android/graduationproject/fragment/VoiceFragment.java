@@ -1,5 +1,6 @@
 package com.ststudy.client.android.graduationproject.fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewPager;
@@ -10,7 +11,6 @@ import com.ststudy.client.android.graduationproject.R;
 import com.ststudy.client.android.graduationproject.adapter.SplashAdapter;
 import com.ststudy.client.android.graduationproject.listener.OnViewPagerSelectedLastListener;
 import com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip;
-import org.jetbrains.annotations.Contract;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,10 +25,10 @@ public class VoiceFragment extends BaseFragment {
     private PagerSlidingTabStrip mSlidingTabVoice;
     private ViewPager mVp4Voice;
 
+    @SuppressLint("ValidFragment")
     private VoiceFragment() {
     }
 
-    @Contract(pure = true)
     public static VoiceFragment getInstance() {
         return VoiceFragmentHolder.INSTANCE;
     }

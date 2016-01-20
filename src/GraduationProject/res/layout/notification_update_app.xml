@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_gravity="center_vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+		>
+
+	<ImageView
+			android:id="@+id/ivUpdateIcon"
+			android:layout_weight="1"
+			android:src="@drawable/ic_launcher"
+			android:layout_gravity="center_vertical"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			/>
+
+	<LinearLayout
+			android:layout_weight="4"
+			android:layout_width="0dp"
+			android:gravity="center_vertical"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			>
+
+		<TextView
+				android:id="@+id/tvUpdateText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				/>
+
+		<ProgressBar
+				android:id="@+id/pbUpdateProgress"
+				android:minHeight="@dimen/normal_dp_8"
+				android:maxHeight="@dimen/normal_dp_8"
+				style="@android:style/Widget.ProgressBar.Horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				/>
+
+		<TextView
+				android:id="@+id/tvUpdateSubText"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				/>
+	</LinearLayout>
+
+</LinearLayout>

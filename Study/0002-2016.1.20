@@ -1,0 +1,10 @@
+设置项目中Java编译版本：
+
+	File -> Project Structure -> Project Settings -> Project -> Project language level: 7
+
+Volley double post when have slow request:
+	出现的提示信息：
+		BasicNetwork.logSlowRequests: HTTP response for request=<[ ] 
+	解决方案：
+		加入一下代码
+		request.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS * 2, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));

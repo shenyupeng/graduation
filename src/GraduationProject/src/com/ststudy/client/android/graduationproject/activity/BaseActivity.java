@@ -11,6 +11,7 @@ import java.util.LinkedList;
  * Created by Aaron on 2016/1/17.
  * 用于Activity的统一管理，避免内存泄漏
  */
+
 public abstract class BaseActivity extends FragmentActivity {
 
     //Activity管理链表

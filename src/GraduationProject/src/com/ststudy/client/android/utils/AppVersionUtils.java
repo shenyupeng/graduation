@@ -3,12 +3,14 @@ package com.ststudy.client.android.utils;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.ststudy.client.android.graduationproject.App;
 import com.ststudy.client.android.graduationproject.Constants;
+import com.ststudy.client.android.graduationproject.L;
 import com.ststudy.client.android.graduationproject.dialog.VersionUpdateDialog;
 import com.ststudy.client.android.graduationproject.model.NewVersion;
 import com.ststudy.client.android.graduationproject.utils.DataParseUtils;
@@ -21,6 +23,8 @@ import org.json.JSONObject;
 public class AppVersionUtils {
 
     private static final String PREF_VERSION_CODE = "pref_version_code";
+    private static final String PREF_NOTIP_CODE = "pref_notip_code";
+
 
     /**
      * 获取版本号
@@ -38,6 +42,16 @@ public class AppVersionUtils {
             e.printStackTrace();
         }
         return _versionCode;
+    }
+
+    /**
+     * 判断是否需要提示更新
+     *
+     * @param pContext 上下文
+     * @return 更新
+     */
+    public static boolean isTipUpdateApp(Context pContext) {
+        return ((SharedPrefsUtils.getPrefInt(pContext, PREF_NOTIP_CODE, 0)) != getVersionCode(pContext));
     }
 
     /**
@@ -60,6 +74,16 @@ public class AppVersionUtils {
     }
 
     /**
+     * 设置当前版本不提示更新
+     *
+     * @param pContext 上下文
+     */
+    public static void setNoTipUpdateApp(Context pContext) {
+        //通过VersionCode来判断，否则会出现版本升级后也不提示更新
+        SharedPrefsUtils.setPrefInt(pContext, PREF_NOTIP_CODE, getVersionCode(pContext));
+    }
+
+    /**
      * 检查应用版本更新信息
      *
      * @param pContext 弹对话框所需要的上下文
@@ -79,9 +103,10 @@ public class AppVersionUtils {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                L.d("网络错误！！");
             }
         });
+        _request.setRetryPolicy(new DefaultRetryPolicy(DefaultRetryPolicy.DEFAULT_TIMEOUT_MS * 2, DefaultRetryPolicy.DEFAULT_MAX_RETRIES, DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         App.getRequestQueue().add(_request).setTag(pTag);
     }
 }

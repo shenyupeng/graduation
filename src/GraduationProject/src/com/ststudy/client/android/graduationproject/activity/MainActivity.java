@@ -52,7 +52,10 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initData() {
         //检查版本升级
-        AppVersionUtils.checkUpdate(MainActivity.this, TAG);
+        if (AppVersionUtils.isTipUpdateApp(MainActivity.this)) {
+            AppVersionUtils.checkUpdate(MainActivity.this, TAG);
+        }
+
         mCareerCourseList = new ArrayList<>();
         mQuitTimer = new Timer();
     }
