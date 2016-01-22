@@ -1,28 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res/com.ststudy.client.android.graduationproject"
 			  android:orientation="vertical"
 			  android:layout_width="match_parent"
 			  android:layout_height="match_parent"
+			  android:background="#FFFFFF"
 		>
 
-	<Button
-			android:id="@+id/btnStart"
-			android:text="开始下载"
-			android:layout_width="wrap_content"
+	<com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip
+			android:id="@+id/slidingTabVideo"
+			app:slidingBlock="@drawable/image_sliding_block"
+			android:background="@drawable/sliding_tab_strip_background"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			/>
+			>
 
-	<Button
-			android:id="@+id/btnPause"
-			android:text="暂停下载"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			/>
+		<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
 
-	<Button
-			android:id="@+id/btnCancle"
-			android:text="取消下载"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
+			<TextView
+					android:text="本地视频"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="职场教育"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="工程技术"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="历史"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="文学"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="哲学"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="艺术"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="教育社科"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="经济管理"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="政治法律"
+					style="@style/text_sldingTabTitle"
+					/>
+
+
+			<TextView
+					android:text="基础科学"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="医学"
+					style="@style/text_sldingTabTitle"
+					/>
+
+			<TextView
+					android:text="农学"
+					style="@style/text_sldingTabTitle"
+					/>
+		</LinearLayout>
+	</com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip>
+
+	<android.support.v4.view.ViewPager
+			android:id="@+id/vp4Video"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
 			/>
 </LinearLayout>

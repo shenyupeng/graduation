@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.ststudy.client.android.graduationproject.R;
+import org.jetbrains.annotations.Contract;
 
 /**
  * Created by Aaron on 2016/1/18.
@@ -16,6 +17,7 @@ public class UserFragment extends BaseFragment {
     private UserFragment() {
     }
 
+    @Contract(pure = true)
     public static UserFragment getInstance() {
         return UserFragmentHolder.INSTANCE;
     }
@@ -40,7 +42,7 @@ public class UserFragment extends BaseFragment {
      * @param pView 当前显示的View
      */
     @Override
-    protected void initView(View pView) {
+    protected void findView(View pView) {
 
     }
 

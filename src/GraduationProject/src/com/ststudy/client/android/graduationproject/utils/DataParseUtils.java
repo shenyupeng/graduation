@@ -36,6 +36,12 @@ public class DataParseUtils {
     }
 
 
+    /**
+     * 解析新版本
+     *
+     * @param pJsonObject 从网络中获取到的数据
+     * @return 新版本信息对象
+     */
     public static NewVersion parseNewVersion(JSONObject pJsonObject) {
         NewVersion _newVersion = null;
         try {

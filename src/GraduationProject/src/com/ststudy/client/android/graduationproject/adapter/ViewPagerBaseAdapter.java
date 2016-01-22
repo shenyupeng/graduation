@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * Created by Aaron on 2016/1/17.
+ * ViewPager的基础Adapter
  */
 public class ViewPagerBaseAdapter extends PagerAdapter {
 

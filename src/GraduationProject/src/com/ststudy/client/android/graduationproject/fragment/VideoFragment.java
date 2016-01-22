@@ -2,35 +2,34 @@ package com.ststudy.client.android.graduationproject.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import com.ststudy.client.android.graduationproject.R;
+import com.ststudy.client.android.graduationproject.adapter.VoiceFragmentAdapter;
+import com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip;
+import org.jetbrains.annotations.Contract;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Aaron on 2016/1/18.
  * 视频主界面
  */
-public class VideoFragment extends BaseFragment implements View.OnClickListener {
+public class VideoFragment extends BaseFragment {
+
+    private PagerSlidingTabStrip mSlidingTabVideo;
+    private ViewPager mVp4Video;
 
     private VideoFragment() {
     }
 
+    @Contract(pure = true)
     public static VideoFragment getInstance() {
         return VideoFragmentHolder.INSTANCE;
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btnStart:
-
-                break;
-            case R.id.btnPause:
-                break;
-            case R.id.btnCancle:
-                break;
-        }
     }
 
     private static class VideoFragmentHolder {
@@ -46,9 +45,9 @@ public class VideoFragment extends BaseFragment implements View.OnClickListener 
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        view.findViewById(R.id.btnStart).setOnClickListener(this);
-        view.findViewById(R.id.btnPause).setOnClickListener(this);
-        view.findViewById(R.id.btnCancle).setOnClickListener(this);
+        findView(view);
+        initData();
+        bindData();
     }
 
     /**
@@ -57,8 +56,9 @@ public class VideoFragment extends BaseFragment implements View.OnClickListener 
      * @param pView 当前显示的View
      */
     @Override
-    protected void initView(View pView) {
-
+    protected void findView(View pView) {
+        mSlidingTabVideo = (PagerSlidingTabStrip) pView.findViewById(R.id.slidingTabVideo);
+        mVp4Video = (ViewPager) pView.findViewById(R.id.vp4Video);
     }
 
     /**
@@ -66,7 +66,14 @@ public class VideoFragment extends BaseFragment implements View.OnClickListener 
      */
     @Override
     protected void initData() {
-
+        List<BaseFragment> list = new ArrayList<>();
+        TextView _tv;
+        for (int i = 0; i < mSlidingTabVideo.getTabCount(); i++) {
+            _tv = (TextView) mSlidingTabVideo.getTab(i);
+            list.add(VoiceItemFragment.newInstance(_tv.getText().toString()));
+        }
+        VoiceFragmentAdapter voiceFragmentAdapter = new VoiceFragmentAdapter(getChildFragmentManager(), list);
+        mVp4Video.setAdapter(voiceFragmentAdapter);
     }
 
     /**
@@ -74,7 +81,7 @@ public class VideoFragment extends BaseFragment implements View.OnClickListener 
      */
     @Override
     protected void bindData() {
-
+        mSlidingTabVideo.setViewPager(mVp4Video);
     }
 
     /**

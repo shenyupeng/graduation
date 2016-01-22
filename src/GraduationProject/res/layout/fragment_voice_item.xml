@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ststudy.client.android.ui.swipetoloadlayout.SwipeToLoadLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+
+	<TextView
+			android:id="@id/swipe_target"
+			android:gravity="center"
+			android:textColor="#000000"
+			android:textSize="@dimen/normal_dp_40"
+			android:text="我是中间"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+
+	<include layout="@layout/layout_header"/>
+
+	<include layout="@layout/layout_footer"/>
+
+
+</com.ststudy.client.android.ui.swipetoloadlayout.SwipeToLoadLayout>

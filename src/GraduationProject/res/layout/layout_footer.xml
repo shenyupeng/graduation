@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:id="@id/swipe_load_more_footer"
+		  android:text="我是尾巴"
+		  android:textColor="#FF9F89"
+		  android:background="#00F0F0"
+		  android:gravity="center"
+		  android:layout_width="match_parent"
+		  android:layout_height="60dp"
+		/>

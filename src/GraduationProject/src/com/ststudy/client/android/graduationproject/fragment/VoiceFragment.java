@@ -8,9 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.ststudy.client.android.graduationproject.R;
-import com.ststudy.client.android.graduationproject.adapter.SplashAdapter;
+import com.ststudy.client.android.graduationproject.adapter.VoiceFragmentAdapter;
 import com.ststudy.client.android.graduationproject.listener.OnViewPagerSelectedLastListener;
 import com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip;
+import org.jetbrains.annotations.Contract;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class VoiceFragment extends BaseFragment {
     private VoiceFragment() {
     }
 
+    @Contract(pure = true)
     public static VoiceFragment getInstance() {
         return VoiceFragmentHolder.INSTANCE;
     }
@@ -45,7 +47,7 @@ public class VoiceFragment extends BaseFragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        initView(view);
+        findView(view);
         initData();
         bindData();
         setListener();
@@ -57,7 +59,7 @@ public class VoiceFragment extends BaseFragment {
      * @param pView 当前显示的View
      */
     @Override
-    protected void initView(View pView) {
+    protected void findView(View pView) {
         mSlidingTabVoice = (PagerSlidingTabStrip) pView.findViewById(R.id.slidingTabVoice);
         mVp4Voice = (ViewPager) pView.findViewById(R.id.vp4Voice);
     }
@@ -67,13 +69,16 @@ public class VoiceFragment extends BaseFragment {
      */
     @Override
     protected void initData() {
-
-        List<Integer> list = new ArrayList<>();
+        List<BaseFragment> list = new ArrayList<>();
         for (int i = 0; i < mSlidingTabVoice.getTabCount(); i++) {
-            list.add(R.drawable.ic_launcher);
+            if (0 == (i % 2)) {
+                list.add(VoiceItemFragment.newInstance("这是音频界面  " + i));
+            } else {
+                list.add(VoiceItemFragment.newInstance(i + "音频界面了哦"));
+            }
         }
-        SplashAdapter mVoiceAdapter = new SplashAdapter(getActivity(), list);
-        mVp4Voice.setAdapter(mVoiceAdapter);
+        VoiceFragmentAdapter voiceFragmentAdapter = new VoiceFragmentAdapter(getChildFragmentManager(), list);
+        mVp4Voice.setAdapter(voiceFragmentAdapter);
     }
 
     /**
@@ -92,7 +97,6 @@ public class VoiceFragment extends BaseFragment {
         mVp4Voice.addOnPageChangeListener(new OnViewPagerSelectedLastListener() {
             @Override
             public void onPageSelected(int i) {
-
             }
         });
     }

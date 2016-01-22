@@ -95,73 +95,7 @@ public class VersionUpdateDialog extends Dialog implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tvDownloadBack:
-                mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
-                File _filePath = new File(Constants.APP_DOWNLOAD_PATH + mUpdateApp.getName());
-                if (_filePath.exists()) {
-                    _filePath.delete();
-                }
-                DownloadRequest _request = new DownloadRequest.Builder().setTitle(mUpdateApp.getName()).setUri(mUpdateApp.getUrl()).setFolder(new File(Constants.APP_DOWNLOAD_PATH)).build();
-                DownloadManager.getInstance().download(_request, mUpdateApp.getUrl(), new CallBack() {
-                    @Override
-                    public void onStarted() {
-                        mNotiRemoteView.setProgressBar(R.id.pbUpdateProgress, 100, 0, false);
-                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "正在连接下载");
-                        mNotiRemoteView.setTextViewText(R.id.tvUpdateText, "版本更新");
-                        mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
-                    }
-
-                    @Override
-                    public void onConnecting() {
-
-                    }
-
-                    @Override
-                    public void onConnected(long total, boolean isRangeSupport) {
-
-                    }
-
-                    @Override
-                    public void onProgress(long finished, long total, int progress) {
-                        mNotiRemoteView.setProgressBar(R.id.pbUpdateProgress, 100, progress, false);
-                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "当前进度为：" + progress + "%");
-                        mNotiRemoteView.setTextViewText(R.id.tvUpdateText, "版本更新");
-                        if ((progress - lastPositon) > 1) {
-                            mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
-                        }
-                    }
-
-                    @Override
-                    public void onCompleted() {
-                        if (mNotiCompat != null) {
-                            mNotiManager.cancel(NOTI_APP_UPDATE);
-                        }
-                        //安装应用
-                        String fileName = Constants.APP_DOWNLOAD_PATH + mUpdateApp.getName();
-                        Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setDataAndType(Uri.fromFile(new File(fileName)), "application/vnd.android.package-archive");
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        getContext().startActivity(intent);
-                    }
-
-                    @Override
-                    public void onDownloadPaused() {
-                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "暂停下载");
-                        mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
-                    }
-
-                    @Override
-                    public void onDownloadCanceled() {
-                        if (mNotiCompat != null) {
-                            mNotiManager.cancel(NOTI_APP_UPDATE);
-                        }
-                    }
-
-                    @Override
-                    public void onFailed(DownloadException e) {
-                        mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "下载失败");
-                        mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
-                    }
-                });
+                upateApp();
                 this.dismiss();
                 break;
             case R.id.tvNoTip:
@@ -169,8 +103,82 @@ public class VersionUpdateDialog extends Dialog implements View.OnClickListener 
                 this.dismiss();
                 break;
             case R.id.tvForceUpdate:
-
+                upateApp();
                 break;
         }
+    }
+
+
+    /**
+     * 更新APP操作
+     */
+    private void upateApp() {
+        mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
+        File _filePath = new File(Constants.APP_DOWNLOAD_PATH + mUpdateApp.getName());
+        if (_filePath.exists()) {
+            _filePath.delete();
+        }
+        DownloadRequest _request = new DownloadRequest.Builder().setTitle(mUpdateApp.getName()).setUri(mUpdateApp.getUrl()).setFolder(new File(Constants.APP_DOWNLOAD_PATH)).build();
+        DownloadManager.getInstance().download(_request, mUpdateApp.getUrl(), new CallBack() {
+            @Override
+            public void onStarted() {
+                mNotiRemoteView.setProgressBar(R.id.pbUpdateProgress, 100, 0, false);
+                mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "正在连接下载");
+                mNotiRemoteView.setTextViewText(R.id.tvUpdateText, "版本更新");
+                mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
+            }
+
+            @Override
+            public void onConnecting() {
+
+            }
+
+            @Override
+            public void onConnected(long total, boolean isRangeSupport) {
+
+            }
+
+            @Override
+            public void onProgress(long finished, long total, int progress) {
+                mNotiRemoteView.setProgressBar(R.id.pbUpdateProgress, 100, progress, false);
+                mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "当前进度为：" + progress + "%");
+                mNotiRemoteView.setTextViewText(R.id.tvUpdateText, "版本更新");
+                if ((progress - lastPositon) > 1) {
+                    mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
+                }
+            }
+
+            @Override
+            public void onCompleted() {
+                if (mNotiCompat != null) {
+                    mNotiManager.cancel(NOTI_APP_UPDATE);
+                }
+                //安装应用
+                String fileName = Constants.APP_DOWNLOAD_PATH + mUpdateApp.getName();
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setDataAndType(Uri.fromFile(new File(fileName)), "application/vnd.android.package-archive");
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                getContext().startActivity(intent);
+            }
+
+            @Override
+            public void onDownloadPaused() {
+                mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "暂停下载");
+                mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
+            }
+
+            @Override
+            public void onDownloadCanceled() {
+                if (mNotiCompat != null) {
+                    mNotiManager.cancel(NOTI_APP_UPDATE);
+                }
+            }
+
+            @Override
+            public void onFailed(DownloadException e) {
+                mNotiRemoteView.setTextViewText(R.id.tvUpdateSubText, "下载失败");
+                mNotiManager.notify(NOTI_APP_UPDATE, mNotiCompat.build());
+            }
+        });
     }
 }

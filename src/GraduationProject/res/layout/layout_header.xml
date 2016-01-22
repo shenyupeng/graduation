@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:id="@id/swipe_refresh_header"
+		  android:text="我是头"
+		  android:background="#0F0FF0"
+		  android:gravity="center"
+		  android:layout_width="match_parent"
+		  android:layout_height="60dp"
+		/>

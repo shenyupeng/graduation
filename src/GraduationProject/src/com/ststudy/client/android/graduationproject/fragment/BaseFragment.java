@@ -25,7 +25,7 @@ public abstract class BaseFragment extends Fragment {
      *
      * @param pView 当前显示的View
      */
-    protected abstract void initView(View pView);
+    protected abstract void findView(View pView);
 
 
     /**

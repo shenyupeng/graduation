@@ -1,11 +1,11 @@
 
 package com.ststudy.client.android.ui.swipeback;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import com.ststudy.client.android.graduationproject.activity.BaseActivity;
 
-public class SwipeBackActivity extends Activity implements SwipeBackActivityBase {
+public abstract class SwipeBackActivity extends BaseActivity implements SwipeBackActivityBase {
     private SwipeBackActivityHelper mHelper;
 
     @Override
