@@ -9,24 +9,24 @@ import android.widget.TextView;
 import com.ststudy.client.android.graduationproject.R;
 
 /**
- * Created by Aaron on 2016/1/21.
- * 提供音频的统一接口
+ * Created by Aaron on 2016/1/23.
+ * 每一个视频的通用接口
  */
-public class VoiceItemFragment extends BaseFragment {
+public class VideoItemFragment extends BaseFragment {
 
-    private TextView mTvTarget;
     private int mCurrentIndex;
+    private TextView mTvTarget;
 
     /**
-     * 提供私有的构造函数
+     * 提供私有的构造
      */
-    private VoiceItemFragment() {
+    private VideoItemFragment() {
     }
 
-    public static BaseFragment newInstance(int pIndex) {
-        VoiceItemFragment _fragment = new VoiceItemFragment();
+    public static VideoItemFragment newInstance(int pIndex) {
+        VideoItemFragment _fragment = new VideoItemFragment();
         Bundle _bundle = new Bundle();
-        _bundle.putInt("NORMAL_VOICE", pIndex);
+        _bundle.putInt("NORMAL_VIDEO", pIndex);
         _fragment.setArguments(_bundle);
         return _fragment;
     }
@@ -34,13 +34,13 @@ public class VoiceItemFragment extends BaseFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mCurrentIndex = getArguments().getInt("NORMAL_VOICE", 0);
+        mCurrentIndex = getArguments().getInt("NORMAL_VIDEO", 0);
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return (inflater.inflate(R.layout.fragment_voice_item, container, false));
+        return (inflater.inflate(R.layout.fragment_video_item, container, false));
     }
 
     @Override
@@ -56,11 +56,12 @@ public class VoiceItemFragment extends BaseFragment {
 
     @Override
     protected void initData() {
-        mTvTarget.setText("当前是第" + mCurrentIndex + "个音频管理界面");
+        mTvTarget.setText("当前是第" + mCurrentIndex + "个视频管理界面");
     }
 
     @Override
     protected void bindData() {
+
     }
 
     @Override

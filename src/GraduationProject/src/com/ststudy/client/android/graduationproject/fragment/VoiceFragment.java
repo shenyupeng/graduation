@@ -71,11 +71,7 @@ public class VoiceFragment extends BaseFragment {
     protected void initData() {
         List<BaseFragment> list = new ArrayList<>();
         for (int i = 0; i < mSlidingTabVoice.getTabCount(); i++) {
-            if (0 == (i % 2)) {
-                list.add(VoiceItemFragment.newInstance("这是音频界面  " + i));
-            } else {
-                list.add(VoiceItemFragment.newInstance(i + "音频界面了哦"));
-            }
+            list.add(VoiceItemFragment.newInstance(i));
         }
         VoiceFragmentAdapter voiceFragmentAdapter = new VoiceFragmentAdapter(getChildFragmentManager(), list);
         mVp4Voice.setAdapter(voiceFragmentAdapter);

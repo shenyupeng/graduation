@@ -69,8 +69,7 @@ public class VideoFragment extends BaseFragment {
         List<BaseFragment> list = new ArrayList<>();
         TextView _tv;
         for (int i = 0; i < mSlidingTabVideo.getTabCount(); i++) {
-            _tv = (TextView) mSlidingTabVideo.getTab(i);
-            list.add(VoiceItemFragment.newInstance(_tv.getText().toString()));
+            list.add(VideoItemFragment.newInstance(i));
         }
         VoiceFragmentAdapter voiceFragmentAdapter = new VoiceFragmentAdapter(getChildFragmentManager(), list);
         mVp4Video.setAdapter(voiceFragmentAdapter);
