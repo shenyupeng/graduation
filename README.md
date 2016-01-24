@@ -11,11 +11,11 @@
 ###产品原型
 欢迎界面，在首次安装或者版本升级后显示<br>
 ![欢迎界面](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image1.png)<br>
-版本升级，支持在软件存在严重bug时进行强制升级，在强制升级时候按物理键没有任何响应,且触摸屏幕外部不可消除
+版本升级，支持在软件存在严重bug时进行强制升级，在强制升级时候按物理键没有任何响应,且触摸屏幕外部不可消除<br>
 ![升级界面](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image2.png)
 ![强制升级](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image3.png)
-![普通升级](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image4.png)
-音频、视频播放界面，使用统一接口，支持左右滑动切换
+![普通升级](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image4.png)<br>
+音频、视频播放界面，使用统一接口，支持左右滑动切换<br>
 ![音频界面](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image5.png)
 ![视频揭秘那](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image6.png)<br>
 用户空间<br>

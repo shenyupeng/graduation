@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:background="#09D9D9"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+		>
+
+	<ImageView
+			android:layout_weight="3"
+			android:src="@drawable/ic_launcher"
+			android:padding="@dimen/normal_dp_40"
+			android:contentDescription="视频图片"
+			android:layout_width="@dimen/normal_dp_0"
+			android:layout_height="match_parent"
+			/>
+
+
+	<TextView
+			android:text="我在测试"
+			android:textSize="@dimen/normal_dp_20"
+			android:textColor="@color/black"
+			android:layout_weight="5"
+			android:gravity="center_vertical"
+			android:layout_width="@dimen/normal_dp_0"
+			android:layout_height="match_parent"
+			/>
+
+</LinearLayout>
