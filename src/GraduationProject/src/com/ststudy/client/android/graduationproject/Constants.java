@@ -10,6 +10,8 @@ public class Constants {
 
     public static final String UPDATE_VERSION_API = "https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/version/version";
     public static final String APP_DOWNLOAD_URL = "https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/apk/GraduationProject.apk";
+    public static final String APP_BASE_VIDEO_REQUEST_URL = "https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/api/";
+    //    public static final String APP_BASE_VIDEO_REQUEST_URL = "http://192.168.1.4/api/";
     //    public static final String APP_DOWNLOAD_URL = "http://192.168.1.3/GraduationProject.apk";
 //    public static final String UPDATE_VERSION_API = "http://192.168.1.3/version";
     public static final String APP_DOWNLOAD_PATH = Environment.getExternalStorageDirectory().toString() + "/Download/";
@@ -19,6 +21,11 @@ public class Constants {
     interface MyLog {
         boolean DEBUG = true;
         String TAG = "Aaron";
+    }
+
+    //麦子学院的API
+    public interface MAIZIAPI {
+        String CAREERCOURSE = "http://api.maiziedu.com/v3/getCareerCourse/?count=0";
     }
 
 

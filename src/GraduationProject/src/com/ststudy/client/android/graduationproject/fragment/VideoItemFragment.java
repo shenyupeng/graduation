@@ -5,15 +5,19 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ListView;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.ststudy.client.android.graduationproject.App;
+import com.ststudy.client.android.graduationproject.Constants;
 import com.ststudy.client.android.graduationproject.L;
 import com.ststudy.client.android.graduationproject.R;
+import com.ststudy.client.android.graduationproject.adapter.VideoInfoAdapter;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 /**
  * Created by Aaron on 2016/1/23.
@@ -23,7 +27,7 @@ public class VideoItemFragment extends BaseFragment {
 
     private String TAG = VideoItemFragment.class.getSimpleName();
     private int mCurrentIndex;
-    private TextView mTvTarget;
+    private ListView mVideoItemList;
 
     /**
      * 提供私有的构造
@@ -56,60 +60,30 @@ public class VideoItemFragment extends BaseFragment {
      * 加载数据
      */
     private void loadData() {
-        String _RequestStr = "http://192.168.1.3/2";
-        switch (mCurrentIndex) {
-            case 1:
-                L.d("我是1...........");
-                break;
-            case 2:
-                L.d("我是2...........");
-                break;
-            case 3:
-                L.d("我是3...........");
-                break;
-            case 4:
-                L.d("我是4...........");
-                break;
-            case 5:
-                L.d("我是5...........");
-                break;
-            case 6:
-                L.d("我是6...........");
-                break;
-            case 7:
-                L.d("我是7...........");
-                break;
-            case 8:
-                L.d("我是8...........");
-                break;
-            case 9:
-                L.d("我是9...........");
-                break;
-            case 10:
-                L.d("我是10...........");
-                break;
-            case 11:
-                L.d("我是11...........");
-                break;
-            case 12:
-                L.d("我是12...........");
-                break;
-            default:
-                L.d("我是默认。。。");
-                break;
-        }
-        JsonObjectRequest _request = new JsonObjectRequest(Request.Method.GET, _RequestStr, null, new Response.Listener<JSONObject>() {
-            @Override
-            public void onResponse(JSONObject response) {
-                L.d(response.toString());
+        if (mCurrentIndex > 0) {
+            String _RequestStr;
+            if (1 == mCurrentIndex) {
+                _RequestStr = Constants.MAIZIAPI.CAREERCOURSE;
+            } else {
+                _RequestStr = Constants.APP_BASE_VIDEO_REQUEST_URL + mCurrentIndex;
             }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
+            JsonObjectRequest _request = new JsonObjectRequest(Request.Method.GET, _RequestStr, null, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    if (1 == mCurrentIndex) {
+                        L.d("我是麦子学院的数据：" + response.toString());
+                    } else {
+                        L.d(response.toString());
+                    }
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
 
-            }
-        });
-        App.getRequestQueue().add(_request).setTag(TAG + mCurrentIndex);
+                }
+            });
+            App.getRequestQueue().add(_request).setTag(TAG + mCurrentIndex);
+        }
     }
 
     @Override
@@ -127,12 +101,19 @@ public class VideoItemFragment extends BaseFragment {
 
     @Override
     protected void findView(View pView) {
-        mTvTarget = (TextView) pView.findViewById(R.id.swipe_target);
+        mVideoItemList = (ListView) pView.findViewById(R.id.swipe_target);
+
+        ArrayList<String> list = new ArrayList();
+        for (int i = 0; i < 30; i++) {
+            list.add("111");
+        }
+        VideoInfoAdapter adapter = new VideoInfoAdapter(getContext(), list);
+        mVideoItemList.setAdapter(adapter);
     }
 
     @Override
     protected void initData() {
-        mTvTarget.setText("当前是第" + mCurrentIndex + "个视频管理界面");
+
     }
 
     @Override

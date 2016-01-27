@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.ststudy.client.android.graduationproject.R;
-import com.ststudy.client.android.graduationproject.adapter.VoiceFragmentAdapter;
+import com.ststudy.client.android.graduationproject.adapter.ViewPagerFragmentAdapter;
 import com.ststudy.client.android.graduationproject.listener.OnViewPagerSelectedLastListener;
 import com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip;
 import org.jetbrains.annotations.Contract;
@@ -73,7 +73,7 @@ public class VoiceFragment extends BaseFragment {
         for (int i = 0; i < mSlidingTabVoice.getTabCount(); i++) {
             list.add(VoiceItemFragment.newInstance(i));
         }
-        VoiceFragmentAdapter voiceFragmentAdapter = new VoiceFragmentAdapter(getChildFragmentManager(), list);
+        ViewPagerFragmentAdapter voiceFragmentAdapter = new ViewPagerFragmentAdapter(getChildFragmentManager(), list);
         mVp4Voice.setAdapter(voiceFragmentAdapter);
     }
 

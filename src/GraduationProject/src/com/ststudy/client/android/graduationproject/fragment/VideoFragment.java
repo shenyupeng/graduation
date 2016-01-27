@@ -6,9 +6,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import com.ststudy.client.android.graduationproject.R;
-import com.ststudy.client.android.graduationproject.adapter.VoiceFragmentAdapter;
+import com.ststudy.client.android.graduationproject.adapter.ViewPagerFragmentAdapter;
 import com.ststudy.client.android.ui.pagerslidingtabstrip.PagerSlidingTabStrip;
 import org.jetbrains.annotations.Contract;
 
@@ -67,12 +66,11 @@ public class VideoFragment extends BaseFragment {
     @Override
     protected void initData() {
         List<BaseFragment> list = new ArrayList<>();
-        TextView _tv;
         for (int i = 0; i < mSlidingTabVideo.getTabCount(); i++) {
             list.add(VideoItemFragment.newInstance(i));
         }
-        VoiceFragmentAdapter voiceFragmentAdapter = new VoiceFragmentAdapter(getChildFragmentManager(), list);
-        mVp4Video.setAdapter(voiceFragmentAdapter);
+        ViewPagerFragmentAdapter videoFragmentAdapter = new ViewPagerFragmentAdapter(getChildFragmentManager(), list);
+        mVp4Video.setAdapter(videoFragmentAdapter);
     }
 
     /**

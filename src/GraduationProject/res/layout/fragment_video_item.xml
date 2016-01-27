@@ -5,14 +5,13 @@
 		android:layout_height="match_parent"
 		>
 
-	<TextView
+
+	<ListView
 			android:id="@id/swipe_target"
-			android:gravity="center"
-			android:textColor="#000000"
-			android:textSize="@dimen/text_size_20"
-			android:text="我是中间"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
+			android:scrollbars="none"
+			android:background="@color/bottom_gray"
 			/>
 
 	<include layout="@layout/layout_header"/>

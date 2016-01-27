@@ -9,11 +9,11 @@ import java.util.List;
  * Created by Aaron on 2016/1/21.
  * 音频Fragment
  */
-public class VoiceFragmentAdapter extends BaseFragmentAdapter {
+public class ViewPagerFragmentAdapter extends BaseFragmentAdapter {
 
     private List<Fragment> mFragmentList;
 
-    public VoiceFragmentAdapter(FragmentManager fm, List pFragmentList) {
+    public ViewPagerFragmentAdapter(FragmentManager fm, List pFragmentList) {
         super(fm, pFragmentList);
         this.mFragmentList = pFragmentList;
     }
