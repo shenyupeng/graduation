@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "612061111",
+      "desc": "文化学原理",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2.12061e+008-1.jpg"
+    },
+    {
+      "serieId": "400051416",
+      "desc": "做学问&mdash;&mdash;张勇传院士谈治学之路",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51416-1.jpg"
+    },
+    {
+      "serieId": "402012290",
+      "desc": "重塑形体的科学锻炼原理与方法",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012290.jpg"
+    },
+    {
+      "serieId": "400009718",
+      "desc": "怎样度过法学院这四年",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9718-1.jpg"
+    },
+    {
+      "serieId": "400009730",
+      "desc": "中西文化对比与中华文化现代化的思考",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9730-1.jpg"
+    },
+    {
+      "serieId": "400009260",
+      "desc": "人性、环境与体育管理",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9260-1.jpg"
+    },
+    {
+      "serieId": "402012764",
+      "desc": "一叶舟中载大唐-日本观感",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012764.jpg"
+    },
+    {
+      "serieId": "402012195",
+      "desc": "性别、社会性别与两性差异",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012195.jpg"
+    },
+    {
+      "serieId": "400005188",
+      "desc": "旅游规划",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5188-1.jpg"
+    },
+    {
+      "serieId": "400008146",
+      "desc": "谁在信仰中国-当代中国信仰的社会学分析",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8146-1.jpg"
+    },
+    {
+      "serieId": "400052087",
+      "desc": "客家文化源流",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm52087-1.jpg"
+    },
+    {
+      "serieId": "400007114",
+      "desc": "品德课、新理念、巧设计",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7114-1.jpg"
+    },
+    {
+      "serieId": "400008424",
+      "desc": "《神奇、神秘、神妙的巴蜀文化》",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8424-1.jpg"
+    },
+    {
+      "serieId": "601250437",
+      "desc": "宗教文化研究",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm201250437-1.jpg"
+    },
+    {
+      "serieId": "400201219",
+      "desc": "中国人生仪礼",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm201219-1.jpg"
+    },
+    {
+      "serieId": "400052078",
+      "desc": "名师风骨，俊秀满门&mdash;&mdash;梁启超和他的儿女们",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm52078-1.jpg"
+    },
+    {
+      "serieId": "400050921",
+      "desc": "西方女性主义文化评析",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50921-1.jpg"
+    },
+    {
+      "serieId": "400005277",
+      "desc": "中国人类学的学术自觉与全球意识",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5277-1.jpg"
+    },
+    {
+      "serieId": "400201223",
+      "desc": "清东西陵风水",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm201223-1.jpg"
+    },
+    {
+      "serieId": "400010216",
+      "desc": "教育理论陈述模式批评（上）",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10216-1.jpg"
+    }
+  ],
+  "message": "教育社科",
+  "success": true
+}

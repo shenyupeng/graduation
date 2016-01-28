@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "400009951",
+      "desc": "基于内容的视觉信息检索",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9951-1.jpg"
+    },
+    {
+      "serieId": "400008930",
+      "desc": "钢桥",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8930-1.jpg"
+    },
+    {
+      "serieId": "400015956",
+      "desc": "化工软件应用",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm15956-1.jpg"
+    },
+    {
+      "serieId": "612062067",
+      "desc": "智能信息检索",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm212062067.jpg"
+    },
+    {
+      "serieId": "400009016",
+      "desc": "河流的哲学问答",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9016-1.jpg"
+    },
+    {
+      "serieId": "400008567",
+      "desc": "高分子合金",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8567-1.jpg"
+    },
+    {
+      "serieId": "-1774255935",
+      "desc": "新能源材料研究进展",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2120711361-1.jpg"
+    },
+    {
+      "serieId": "400005274",
+      "desc": "选线设计下",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5274-1.jpg"
+    },
+    {
+      "serieId": "402012945",
+      "desc": "GIS的美学审视",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012945-1.jpg"
+    },
+    {
+      "serieId": "402012431",
+      "desc": "移动通信系统",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012431-1.jpg"
+    },
+    {
+      "serieId": "400006804",
+      "desc": "解读“民以食为忧”&mdash;&mdash;工业化时代的食物营养与健康",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6804-1.jpg"
+    },
+    {
+      "serieId": "400007442",
+      "desc": "健康城市建设的策略与展望",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7442-1.jpg"
+    },
+    {
+      "serieId": "400050468",
+      "desc": "并行设计和并行计算机（Parallelism and the design of parallel computers）",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50468-1.jpg"
+    },
+    {
+      "serieId": "400015806",
+      "desc": "传感器网络与物联网",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm15806-1.jpg"
+    },
+    {
+      "serieId": "400010140",
+      "desc": "同济大学建筑工程系“文远讲坛”",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10140-1.jpg"
+    },
+    {
+      "serieId": "400005765",
+      "desc": "过程设备设计",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5765-1.jpg"
+    },
+    {
+      "serieId": "400004879",
+      "desc": "工程生态学-生态系统可持续发展的理论基础",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4879-1.jpg"
+    },
+    {
+      "serieId": "400008407",
+      "desc": "制革工艺学（1）",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8407-1.jpg"
+    },
+    {
+      "serieId": "400006755",
+      "desc": "保护生物多样性",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6755-1.jpg"
+    },
+    {
+      "serieId": "400007149",
+      "desc": "计算多孔多相介质和颗粒材料力学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7149-1.jpg"
+    }
+  ],
+  "message": "工程技术",
+  "success": true
+}

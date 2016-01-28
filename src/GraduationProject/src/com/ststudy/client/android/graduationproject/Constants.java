@@ -12,8 +12,8 @@ public class Constants {
     public static final String APP_DOWNLOAD_URL = "https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/apk/GraduationProject.apk";
     public static final String APP_BASE_VIDEO_REQUEST_URL = "https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/api/";
     //    public static final String APP_BASE_VIDEO_REQUEST_URL = "http://192.168.1.4/api/";
-    //    public static final String APP_DOWNLOAD_URL = "http://192.168.1.3/GraduationProject.apk";
-//    public static final String UPDATE_VERSION_API = "http://192.168.1.3/version";
+//    public static final String APP_DOWNLOAD_URL = "http://192.168.1.4/GraduationProject.apk";
+//    public static final String UPDATE_VERSION_API = "http://192.168.1.4/version";
     public static final String APP_DOWNLOAD_PATH = Environment.getExternalStorageDirectory().toString() + "/Download/";
 
 

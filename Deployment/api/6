@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "420121185",
+      "desc": "漫画专题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm20121185.jpg"
+    },
+    {
+      "serieId": "400016157",
+      "desc": "中国剧协全国青年导演艺术家研修班",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm16157-1.jpg"
+    },
+    {
+      "serieId": "400007076",
+      "desc": "松石宜古图",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7076-1.jpg"
+    },
+    {
+      "serieId": "400016159",
+      "desc": "中国剧协全国青年导演艺术家研修班",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm16159-1.jpg"
+    },
+    {
+      "serieId": "420121259",
+      "desc": "欣赏英语诗歌的音乐美",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm20121259.jpg"
+    },
+    {
+      "serieId": "400015976",
+      "desc": "戴树红解码张子谦",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm15976-1.jpg"
+    },
+    {
+      "serieId": "400052208",
+      "desc": "中国山水画形成与演进",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm52208-1.jpg"
+    },
+    {
+      "serieId": "400016160",
+      "desc": "中国剧协全国青年导演艺术家研修班",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm16160-1.jpg"
+    },
+    {
+      "serieId": "400103813",
+      "desc": "茶好喝 喝好茶",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm103813-1.jpg"
+    },
+    {
+      "serieId": "400050684",
+      "desc": "“江南丝竹”由来及曲目赏析",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50684-1.jpg"
+    },
+    {
+      "serieId": "400060177",
+      "desc": "沙画艺术的视听魅力",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm60177-1.jpg"
+    },
+    {
+      "serieId": "400005041",
+      "desc": "抛物线音形的张力之美",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5041-1.jpg"
+    },
+    {
+      "serieId": "400051677",
+      "desc": "纸于至善&mdash;&mdash;中国传统造纸工艺之美",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51677-1.jpg"
+    },
+    {
+      "serieId": "400008090",
+      "desc": "李斯特钢琴音乐作品演奏风格分析",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8090-1.jpg"
+    },
+    {
+      "serieId": "400016156",
+      "desc": "中国剧协全国青年导演艺术家研修班",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm16156-1.jpg"
+    },
+    {
+      "serieId": "400060548",
+      "desc": "纤体瑜伽",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm60548-1.jpg"
+    },
+    {
+      "serieId": "400050650",
+      "desc": "藏戏历史与剧本",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50650-1.jpg"
+    },
+    {
+      "serieId": "400054277",
+      "desc": "炎黄风情&mdash;&mdash;让民歌在文明更替的断层中重生",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm54277-1.jpg"
+    },
+    {
+      "serieId": "400016158",
+      "desc": "中国剧协全国青年导演艺术家研修班",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm16158-1.jpg"
+    },
+    {
+      "serieId": "400020796",
+      "desc": "再现当代清明上河图巨作，王俊亮&mdash;&mdash;古镇风情图画卷",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm20796-1.jpg"
+    }
+  ],
+  "message": "艺术",
+  "success": true
+}

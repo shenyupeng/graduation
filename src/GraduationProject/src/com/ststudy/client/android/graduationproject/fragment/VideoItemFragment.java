@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -15,9 +16,14 @@ import com.ststudy.client.android.graduationproject.Constants;
 import com.ststudy.client.android.graduationproject.L;
 import com.ststudy.client.android.graduationproject.R;
 import com.ststudy.client.android.graduationproject.adapter.VideoInfoAdapter;
+import com.ststudy.client.android.graduationproject.model.CareerCourse;
+import com.ststudy.client.android.graduationproject.model.NormalCourse;
+import com.ststudy.client.android.graduationproject.model.VideoItem;
+import com.ststudy.client.android.graduationproject.utils.DataParseUtils;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Aaron on 2016/1/23.
@@ -28,6 +34,10 @@ public class VideoItemFragment extends BaseFragment {
     private String TAG = VideoItemFragment.class.getSimpleName();
     private int mCurrentIndex;
     private ListView mVideoItemList;
+    private List<VideoItem> mVideoList;
+    private VideoInfoAdapter mInfoAdapter;
+    private List<CareerCourse> mCareerCourseList;
+    private List<NormalCourse> mNormalCourseList;
 
     /**
      * 提供私有的构造
@@ -47,6 +57,8 @@ public class VideoItemFragment extends BaseFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mCurrentIndex = getArguments().getInt("NORMAL_VIDEO", 0);
+        mVideoList = new ArrayList<>();
+        mInfoAdapter = new VideoInfoAdapter(getContext(), mVideoList);
     }
 
     @Nullable
@@ -70,11 +82,21 @@ public class VideoItemFragment extends BaseFragment {
             JsonObjectRequest _request = new JsonObjectRequest(Request.Method.GET, _RequestStr, null, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
+                    mVideoList.clear();
                     if (1 == mCurrentIndex) {
-                        L.d("我是麦子学院的数据：" + response.toString());
+                        mCareerCourseList = DataParseUtils.parseCareer(response);
+                        for (CareerCourse item : mCareerCourseList) {
+                            mVideoList.add(new VideoItem(item.getImg_url(),
+                                    item.getName()));
+                        }
                     } else {
-                        L.d(response.toString());
+                        mNormalCourseList = DataParseUtils.parseNormalCareer(response);
+                        L.d(mNormalCourseList.size() + "我的长度");
+                        for (NormalCourse item : mNormalCourseList) {
+                            mVideoList.add(new VideoItem(item.getImg_url(), item.getDesc()));
+                        }
                     }
+                    mInfoAdapter.notifyDataSetChanged();
                 }
             }, new Response.ErrorListener() {
                 @Override
@@ -102,13 +124,20 @@ public class VideoItemFragment extends BaseFragment {
     @Override
     protected void findView(View pView) {
         mVideoItemList = (ListView) pView.findViewById(R.id.swipe_target);
-
-        ArrayList<String> list = new ArrayList();
-        for (int i = 0; i < 30; i++) {
-            list.add("111");
-        }
-        VideoInfoAdapter adapter = new VideoInfoAdapter(getContext(), list);
+        VideoInfoAdapter adapter = new VideoInfoAdapter(getContext(), mVideoList);
         mVideoItemList.setAdapter(adapter);
+        mVideoItemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (mCurrentIndex > 0) {
+                    if (1 == mCurrentIndex) {
+                        L.d("课程数为：" + mCareerCourseList.get(position).getClass_count());
+                    } else {
+                        L.d("超星序列ID：" + mNormalCourseList.get(position).getSerieId());
+                    }
+                }
+            }
+        });
     }
 
     @Override

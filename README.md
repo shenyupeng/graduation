@@ -17,6 +17,6 @@
 ![普通升级](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image4.png)<br>
 音频、视频播放界面，使用统一接口，支持左右滑动切换<br>
 ![音频界面](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image5.png)
-![视频揭秘那](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image6.png)<br>
+![视频界面](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image6.png)<br>
 用户空间<br>
 ![用户空间](https://raw.githubusercontent.com/shenyupeng/graduation/master/Design/prototype/image7.png)

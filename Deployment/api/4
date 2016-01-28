@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "400009076",
+      "desc": "词汇与句法的关联",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9076-1.jpg"
+    },
+    {
+      "serieId": "400009330",
+      "desc": "气的建构于气的发放：气的实践美学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9330-1.jpg"
+    },
+    {
+      "serieId": "400010387",
+      "desc": "与汉语语气系统相关的一些问题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10387-1.jpg"
+    },
+    {
+      "serieId": "400004699",
+      "desc": "唐代文学学会国际学术研讨会",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4699-1.jpg"
+    },
+    {
+      "serieId": "400050371",
+      "desc": "2011年上海市文艺学研究生暑期学校",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50371-1.jpg"
+    },
+    {
+      "serieId": "400008194",
+      "desc": "中国诗学的文学文本论",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8194-1.jpg"
+    },
+    {
+      "serieId": "400053458",
+      "desc": "语言表达之情景再现",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm53458-1.jpg"
+    },
+    {
+      "serieId": "400052727",
+      "desc": "美国大学英语专业学生写作面面观",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm52727-1.jpg"
+    },
+    {
+      "serieId": "400008850",
+      "desc": "语义地图模型和虚词语义分析",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8850-1.jpg"
+    },
+    {
+      "serieId": "400007399",
+      "desc": "上海大学2011年首届创意写作夏令营",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7399-1.jpg"
+    },
+    {
+      "serieId": "400005073",
+      "desc": "彝族语言与文化",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5073-1.jpg"
+    },
+    {
+      "serieId": "400008014",
+      "desc": "天津方言与津派相声",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8014-1.jpg"
+    },
+    {
+      "serieId": "400009828",
+      "desc": "副词“方”多种时体用法的关系",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9828-1.jpg"
+    },
+    {
+      "serieId": "400007376",
+      "desc": "语言、文化与跨文化沟通",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7376-1.jpg"
+    },
+    {
+      "serieId": "400008473",
+      "desc": "海事英语",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8473-1.jpg"
+    },
+    {
+      "serieId": "400051510",
+      "desc": "才子佳人与中国言情小说",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51510-1.jpg"
+    },
+    {
+      "serieId": "400009637",
+      "desc": "文学经典与文学史的书写",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9637-1.jpg"
+    },
+    {
+      "serieId": "400050355",
+      "desc": "文学与图像",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50355-1.jpg"
+    },
+    {
+      "serieId": "400050360",
+      "desc": "英伽登文论在当代中国的接受",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50360-1.jpg"
+    },
+    {
+      "serieId": "400009056",
+      "desc": "陈望道修辞学思想研究",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9056-1.jpg"
+    }
+  ],
+  "message": "文学",
+  "success": true
+}

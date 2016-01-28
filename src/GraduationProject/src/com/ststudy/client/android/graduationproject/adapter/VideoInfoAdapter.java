@@ -1,12 +1,15 @@
 package com.ststudy.client.android.graduationproject.adapter;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.ststudy.client.android.graduationproject.R;
+import com.ststudy.client.android.graduationproject.model.VideoItem;
 import com.ststudy.client.android.utils.glide.Glide;
 
 import java.util.List;
@@ -17,13 +20,11 @@ import java.util.List;
  */
 public class VideoInfoAdapter extends ViewBaseAdapter {
 
-    private Context mContext;
-    private List<?> mList;
+    private List<VideoItem> mList;
     private LayoutInflater mInflater;
 
-    public VideoInfoAdapter(Context pContext, List<?> pList) {
+    public VideoInfoAdapter(Context pContext, List<VideoItem> pList) {
         super(pList);
-        this.mContext = pContext;
         this.mList = pList;
         mInflater = LayoutInflater.from(pContext);
     }
@@ -33,8 +34,9 @@ public class VideoInfoAdapter extends ViewBaseAdapter {
         return mList.get(position);
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, final ViewGroup parent) {
         ViewHolder holder = new ViewHolder();
         if (null == convertView) {
             convertView = mInflater.inflate(R.layout.item_video_course, null, false);
@@ -44,8 +46,8 @@ public class VideoInfoAdapter extends ViewBaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        Glide.with(parent.getContext()).load("http://www.maiziedu.com/uploads/course/2015/09/img-ios2x.png").into(holder.ivCourse);
-        holder.tvCourseDesc.setText("我在测试。。。。");
+        Glide.with(parent.getContext()).load(mList.get(position).getImg_url()).into(holder.ivCourse);
+        holder.tvCourseDesc.setText(mList.get(position).getTv_desc());
         return convertView;
     }
 

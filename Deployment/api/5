@@ -1,30 +1,101 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "400009193",
+      "desc": "华严经导读──离世间品",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9193-1.jpg"
+    },
+    {
+      "serieId": "400010106",
+      "desc": "汉字与易经的基本范畴",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10106-1.jpg"
+    },
+    {
+      "serieId": "400007212",
+      "desc": "宗教·宗教问题·宗教政策",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7212-1.jpg"
+    },
+    {
+      "serieId": "400051962",
+      "desc": "对东坡肘子的观察与思考",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51962-1.jpg"
+    },
+    {
+      "serieId": "400050598",
+      "desc": "儒学与东亚文化圈的形成（上）",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50598-1.jpg"
+    },
+    {
+      "serieId": "400050993",
+      "desc": "近代欧洲的中国热与儒家文化",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50993-1.jpg"
+    },
+    {
+      "serieId": "400016178",
+      "desc": "当代俄罗斯哲学家",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm16178-1.jpg"
+    },
+    {
+      "serieId": "612062293",
+      "desc": "美国的佛教诗人：费罗诺莎、庞德和施耐德",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm212062293-1.jpg"
+    },
+    {
+      "serieId": "400006473",
+      "desc": "Religious Ethics and Environment",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6473-1.jpg"
+    },
+    {
+      "serieId": "400001081",
+      "desc": "弘扬科学精神与人文精神",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm1081-1.jpg"
+    },
+    {
+      "serieId": "400100500",
+      "desc": "黑格尔市民社会理论概说",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm100500-1.jpg"
+    },
+    {
+      "serieId": "400007125",
+      "desc": "可以死，可以不死，死丧勇&mdash;&mdash;孟子说勇敢",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7125-1.jpg"
+    },
+    {
+      "serieId": "400002475",
+      "desc": "康德与启蒙运动",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2475-1.jpg"
+    },
+    {
+      "serieId": "400008762",
+      "desc": "科学哲学的语境论进路及其问题域",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8762-1.jpg"
+    },
+    {
+      "serieId": "400000520",
+      "desc": "西方科学&mdash;&mdash;思想、方法和精神",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm0520-1.jpg"
+    },
+    {
+      "serieId": "400003301",
+      "desc": "中国哲学史方法论问题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm3301-1.jpg"
+    },
+    {
+      "serieId": "400000595",
+      "desc": "中西自由意志观比较",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm0595-1.jpg"
+    },
+    {
+      "serieId": "400000473",
+      "desc": "西方现代绘画的哲学思考",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm0473-1.jpg"
+    },
+    {
+      "serieId": "400001036",
+      "desc": "后现代世界的华人与华人性：本质论、自由与行为表现",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm1036-1.jpg"
+    }
+  ],
+  "message": "哲学",
+  "success": true
+}

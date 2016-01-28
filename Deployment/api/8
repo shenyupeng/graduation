@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "400004828",
+      "desc": "洛伦兹曲线与基尼系数的科学计算",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4828-1.jpg"
+    },
+    {
+      "serieId": "400006787",
+      "desc": "现代性的困扰与前现代的管理智慧",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6787-1.jpg"
+    },
+    {
+      "serieId": "400051463",
+      "desc": "国际市场营销",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51463-1.jpg"
+    },
+    {
+      "serieId": "400010351",
+      "desc": "国际税收",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10351-1.jpg"
+    },
+    {
+      "serieId": "400006924",
+      "desc": "多经企业公司治理与实践",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6924-1.jpg"
+    },
+    {
+      "serieId": "400051670",
+      "desc": "经济学的普世价值与中国特色--从夏普利获得诺贝尔奖谈起",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51670-1.jpg"
+    },
+    {
+      "serieId": "400052356",
+      "desc": "国际投资学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm52356-1.jpg"
+    },
+    {
+      "serieId": "400050327",
+      "desc": "段德峰：社会企业&mdash;&mdash;公益新方向（陆向谦创业领导力论坛）",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50327-1.jpg"
+    },
+    {
+      "serieId": "400010225",
+      "desc": "房地产政策现调控",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10225-1.jpg"
+    },
+    {
+      "serieId": "400050432",
+      "desc": "陆向谦领导力论坛",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50432-1.jpg"
+    },
+    {
+      "serieId": "400050438",
+      "desc": "陆向谦领导力论坛",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50438-1.jpg"
+    },
+    {
+      "serieId": "400051982",
+      "desc": "海上丝绸之路",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51982-1.jpg"
+    },
+    {
+      "serieId": "400051388",
+      "desc": "产业群的嵌入性与竞争力",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51388-1.jpg"
+    },
+    {
+      "serieId": "400050347",
+      "desc": "复杂网络",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50347-1.jpg"
+    },
+    {
+      "serieId": "400050439",
+      "desc": "陆向谦领导力论坛",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50439-1.jpg"
+    },
+    {
+      "serieId": "400009046",
+      "desc": "非传统货币政策的实施和退出",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9046-1.jpg"
+    },
+    {
+      "serieId": "400009366",
+      "desc": "The Chinese Economy",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9366-1.jpg"
+    },
+    {
+      "serieId": "400006217",
+      "desc": "美国房地产法简介和与中国房地产法的比较",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6217-1.jpg"
+    },
+    {
+      "serieId": "400050435",
+      "desc": "陆向谦领导力论坛",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50435-1.jpg"
+    },
+    {
+      "serieId": "400015638",
+      "desc": "从铺规到行员训练&mdash;&mdash;近代上海银行界的职业生活",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm15638-1.jpg"
+    }
+  ],
+  "message": "经济管理",
+  "success": true
+}

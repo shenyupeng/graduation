@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "400008263",
+      "desc": "药事法规",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8263-1.jpg"
+    },
+    {
+      "serieId": "400009094",
+      "desc": "疏影横斜浮暗香&mdash;&mdash;法律方法初识",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9094-1.jpg"
+    },
+    {
+      "serieId": "400050935",
+      "desc": "我国刑法中单位犯罪的几个问题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50935-1.jpg"
+    },
+    {
+      "serieId": "400011665",
+      "desc": "世贸组织法",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm11665-1.jpg"
+    },
+    {
+      "serieId": "400010397",
+      "desc": "历史、实践与理论“八二宪法三十年”研讨会",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10397-1.jpg"
+    },
+    {
+      "serieId": "400053322",
+      "desc": "中苏关系的旅顺与大连问题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm53322-1.jpg"
+    },
+    {
+      "serieId": "400015921",
+      "desc": "中韩建交20年：取得的成果与面临课题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm15921-1.jpg"
+    },
+    {
+      "serieId": "400008456",
+      "desc": "财税法",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8456-1.jpg"
+    },
+    {
+      "serieId": "400008331",
+      "desc": "犯罪学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8331-1.jpg"
+    },
+    {
+      "serieId": "400010181",
+      "desc": "多元视角的现代中国法学研究",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10181-1.jpg"
+    },
+    {
+      "serieId": "400008616",
+      "desc": "集体维权的理念、策略与技术：以康菲事件切入",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8616-1.jpg"
+    },
+    {
+      "serieId": "400015546",
+      "desc": "当代刑法思潮论坛：形式刑法观初反省与实质刑法观再批判",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm15546-1.jpg"
+    },
+    {
+      "serieId": "402012157",
+      "desc": "环境法基础理论",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012157-1.jpg"
+    },
+    {
+      "serieId": "400010057",
+      "desc": "上市公司监管的法律框架",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10057-1.jpg"
+    },
+    {
+      "serieId": "400010372",
+      "desc": "知识产权诉讼实务",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10372-1.jpg"
+    },
+    {
+      "serieId": "400006664",
+      "desc": "ICT产业标准专利许可政策及反垄断规制",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6664-1.jpg"
+    },
+    {
+      "serieId": "400015541",
+      "desc": "江平谈八二宪法",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm15541-1.jpg"
+    },
+    {
+      "serieId": "400004466",
+      "desc": "中外劳动法专题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4466-1.jpg"
+    },
+    {
+      "serieId": "400008679",
+      "desc": "如何准备起诉和答辩",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8679-1.jpg"
+    },
+    {
+      "serieId": "400010295",
+      "desc": "海上霸主&mdash;&mdash;航空母舰",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10295-1.jpg"
+    }
+  ],
+  "message": "政治法律",
+  "success": true
+}

@@ -8,7 +8,7 @@
 	<ImageView
 			android:id="@+id/ivCourse"
 			android:layout_weight="3"
-			android:src="@drawable/ic_launcher"
+			android:src="@drawable/video_test"
 			android:contentDescription="视频图片"
 			android:layout_width="@dimen/normal_dp_0"
 			android:layout_height="wrap_content"
@@ -20,6 +20,7 @@
 			android:text="我在测试"
 			android:textSize="@dimen/normal_dp_20"
 			android:layout_marginLeft="@dimen/normal_dp_8"
+			android:maxLines="2"
 			android:textColor="@color/black"
 			android:layout_weight="5"
 			android:gravity="center_vertical"

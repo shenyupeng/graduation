@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "420703192",
+      "desc": "现代作物栽培学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm20703192-1.jpg"
+    },
+    {
+      "serieId": "400005686",
+      "desc": "作物育种学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5686-1.jpg"
+    },
+    {
+      "serieId": "400005326",
+      "desc": "我国羊胚胎工程研究进展及其在养羊生产中的应用",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5326-1.jpg"
+    },
+    {
+      "serieId": "400005405",
+      "desc": "姜科花卉资源特点",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5405-1.jpg"
+    },
+    {
+      "serieId": "400050528",
+      "desc": "食用菌栽培技术",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50528-1.jpg"
+    },
+    {
+      "serieId": "400004396",
+      "desc": "草地学双语",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4396-1.jpg"
+    },
+    {
+      "serieId": "402012597",
+      "desc": "动物觅食与生殖",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012597-1.jpg"
+    },
+    {
+      "serieId": "420121742",
+      "desc": "自然草场放牧牛的营养管理战略",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm20121742.jpg"
+    },
+    {
+      "serieId": "400004395",
+      "desc": "Advanced Research on American Agriculture",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4395-1.jpg"
+    },
+    {
+      "serieId": "402121648",
+      "desc": "畜产食品工艺学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2121648-1.jpg"
+    },
+    {
+      "serieId": "400006228",
+      "desc": "我国农产品食品质量 安全控制的紧迫性",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6228-1.jpg"
+    },
+    {
+      "serieId": "400007130",
+      "desc": "农业工程导论",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7130-1.jpg"
+    },
+    {
+      "serieId": "400005965",
+      "desc": "鼠害防治",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5965-1.jpg"
+    },
+    {
+      "serieId": "-1774359166",
+      "desc": "家庭养花、插花及庭院绿化技巧",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2120608130-1.jpg"
+    },
+    {
+      "serieId": "400005382",
+      "desc": "园艺产品贮运学",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5382-1.jpg"
+    },
+    {
+      "serieId": "400008804",
+      "desc": "农业工程测试技术",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8804-1.jpg"
+    },
+    {
+      "serieId": "400005139",
+      "desc": "农业水土环境保护的新理论与新技术",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5139-1.jpg"
+    },
+    {
+      "serieId": "400004313",
+      "desc": "种子生产原理与方法",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4313-1.jpg"
+    },
+    {
+      "serieId": "400005061",
+      "desc": "人居环境中的风景园林规划与设计",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5061-1.jpg"
+    },
+    {
+      "serieId": "400005582",
+      "desc": "花卉学Ⅱ",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5582-1.jpg"
+    }
+  ],
+  "message": "农学",
+  "success": true
+}

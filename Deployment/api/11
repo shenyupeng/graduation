@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "400004707",
+      "desc": "中药鉴定学专论",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4707-1.jpg"
+    },
+    {
+      "serieId": "400007948",
+      "desc": "杏林春暖话健康",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7948-1.jpg"
+    },
+    {
+      "serieId": "400005035",
+      "desc": "心脏性猝死",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5035-1.jpg"
+    },
+    {
+      "serieId": "400008025",
+      "desc": "杏林春暖话健康",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8025-1.jpg"
+    },
+    {
+      "serieId": "400006958",
+      "desc": "出血性脑血管疾病",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6958-1.jpg"
+    },
+    {
+      "serieId": "400051694",
+      "desc": "颈椎病的诊断和治疗",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51694-1.jpg"
+    },
+    {
+      "serieId": "400051228",
+      "desc": "预防为主  远离癌症",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm51228-1.jpg"
+    },
+    {
+      "serieId": "400006112",
+      "desc": "男性不育，健康新挑战&mdash;&mdash;李铮教授实例示演系列",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6112-1.jpg"
+    },
+    {
+      "serieId": "400005558",
+      "desc": "养生保健系列专题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5558-1.jpg"
+    },
+    {
+      "serieId": "400100395",
+      "desc": "人体骨关节疾病",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm100395-1.jpg"
+    },
+    {
+      "serieId": "400007009",
+      "desc": "小脑、椎体外系解剖疾病",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7009-1.jpg"
+    },
+    {
+      "serieId": "400052406",
+      "desc": "近视与防治",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm52406-1.jpg"
+    },
+    {
+      "serieId": "400005897",
+      "desc": "中医学关于脂肪肝的临床治疗和预防",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5897-1.jpg"
+    },
+    {
+      "serieId": "400006157",
+      "desc": "从抗癌小鼠的意外发现到全新的抗癌疗法",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6157-1.jpg"
+    },
+    {
+      "serieId": "400007000",
+      "desc": "缺血性脑血管疾病",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7000-1.jpg"
+    },
+    {
+      "serieId": "402012705",
+      "desc": "女性健康问题&mdash;&mdash;如何维护围绝经期女性健康",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2012705-1.jpg"
+    },
+    {
+      "serieId": "400007290",
+      "desc": "抗恶性肿瘤药",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7290-1.jpg"
+    },
+    {
+      "serieId": "400006449",
+      "desc": "软组织贴扎技术-肌内效布应用简介",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6449-1.jpg"
+    },
+    {
+      "serieId": "400008702",
+      "desc": "自然周期扳机时间的选择",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8702-1.jpg"
+    },
+    {
+      "serieId": "400008712",
+      "desc": "小鼠显微授精新技术&mdash;&mdash;人类ICSI技术动物模型的突破",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8712-1.jpg"
+    }
+  ],
+  "message": "医学",
+  "success": true
+}

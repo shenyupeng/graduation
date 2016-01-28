@@ -1,30 +1,106 @@
 {
-	"data":[
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm103887-1.jpg",
-			"serieId":"400103887",
-			"desc":"总裁的演讲逻辑"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		},
-		{
-			"img_url":"http://video.chaoxing.com/images/ztnew/xltm52552-1.jpg",
-			"serieId":"400052552",
-			"desc":"资源循环科学与工程概论"
-		}],
-	"message":"第2类数据",
-	"success":true
-	}
+  "data": [
+    {
+      "serieId": "400002183",
+      "desc": "公共考古与文化遗产--;以曹操墓发掘为例",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm2183-1.jpg"
+    },
+    {
+      "serieId": "400004166",
+      "desc": "历史研究的史料与视角",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm4166-1.jpg"
+    },
+    {
+      "serieId": "400008846",
+      "desc": "回首百年话辛亥",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8846-1.jpg"
+    },
+    {
+      "serieId": "400010015",
+      "desc": "古礼书与古礼仪节研究方法论",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm10015-1.jpg"
+    },
+    {
+      "serieId": "400007370",
+      "desc": "潟湖、历史记忆与清代台湾鲲身王信仰的扩张",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7370-1.jpg"
+    },
+    {
+      "serieId": "400006033",
+      "desc": "从人口为主要动力看南宋经济发展的限度兼论古代中西生产力的主要差距",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6033-1.jpg"
+    },
+    {
+      "serieId": "400060418",
+      "desc": "中国梦基本问题分析",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm60418-1.jpg"
+    },
+    {
+      "serieId": "400007655",
+      "desc": "“良医良相”说源流考论",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7655-1.jpg"
+    },
+    {
+      "serieId": "400009536",
+      "desc": "天津档案文化大讲堂",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9536-1.jpg"
+    },
+    {
+      "serieId": "400050979",
+      "desc": "别样的文学史--;二战期间及战后法国犹太人的身份问题",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50979-1.jpg"
+    },
+    {
+      "serieId": "400005194",
+      "desc": "中国水利史",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm5194-1.jpg"
+    },
+    {
+      "serieId": "400008886",
+      "desc": "俄国共产党党纲对中国近代史发挥的作用",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8886-1.jpg"
+    },
+    {
+      "serieId": "400050977",
+      "desc": "《尊德性与道问学之争下的汉宋学论》三讲",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm50977-1.jpg"
+    },
+    {
+      "serieId": "420121266",
+      "desc": "西伯利亚的中国移民：历史与现状",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm20121266.jpg"
+    },
+    {
+      "serieId": "400008870",
+      "desc": "“世界主义”术语的历史演变",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm8870-1.jpg"
+    },
+    {
+      "serieId": "400006349",
+      "desc": "概说中国--;非洲友好关系史",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6349-1.jpg"
+    },
+    {
+      "serieId": "400009384",
+      "desc": "香港中文大学历史系比较及公众史讲座系列",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm9384-1.jpg"
+    },
+    {
+      "serieId": "400006587",
+      "desc": "社会经济史理论与中国研究的检讨",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm6587-1.jpg"
+    },
+    {
+      "serieId": "400007073",
+      "desc": "沃尔特·厄尔曼的中世纪史研究",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7073-1.jpg"
+    },
+    {
+      "serieId": "400007240",
+      "desc": "共产国际、联共（布）与中国革命",
+      "img_url": "http://video.chaoxing.com/images/ztnew/xltm7240-1.jpg"
+    }
+  ],
+  "message": "历史",
+  "success": true
+}
