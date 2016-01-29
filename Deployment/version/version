@@ -1,7 +1,7 @@
 {
 	"new_version":{
 		"down_url":"https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/apk/GraduationProject.apk",
-		"vc":1004,
+		"vc":1005,
 		"is_force":false,
 		"desc":"1.更新视频管理界面\r\n2.添加更多数据格式支持\r\n3.下拉刷新\r\n4.界面细节优化\r\n5.修复已知BUG\r\n6.增加总数据量提示",
 		"size":"31.9M"

@@ -1,11 +1,13 @@
 package com.ststudy.client.android.graduationproject.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Aaron on 2016/1/17.
  * 课程开始界面
  * 有利的数据为careerId
  */
-public class CareerCourse {
+public class CareerCourse implements Serializable {
 
     private String img_url;
     private String class_count;

@@ -15,8 +15,7 @@ public class Constants {
 //    public static final String APP_DOWNLOAD_URL = "http://192.168.1.4/GraduationProject.apk";
 //    public static final String UPDATE_VERSION_API = "http://192.168.1.4/version";
     public static final String APP_DOWNLOAD_PATH = Environment.getExternalStorageDirectory().toString() + "/Download/";
-
-
+    
     //Log信息管理
     interface MyLog {
         boolean DEBUG = true;
@@ -26,6 +25,13 @@ public class Constants {
     //麦子学院的API
     public interface MAIZIAPI {
         String CAREERCOURSE = "http://api.maiziedu.com/v3/getCareerCourse/?count=0";
+        String CAREERLISTAPI = "http://api.maiziedu.com/v2/getCareerDetail/?careerId=";
+        String COURSEPLAYINFOAPI = "http://api.maiziedu.com/v2/getCoursePlayInfo/?courseId=";
+    }
+
+    //超星的API
+    public interface CHAOXINGAPI {
+        String CAREERLIST = "http://video.chaoxing.com/ajax/getvideolistinfo_";
     }
 
 

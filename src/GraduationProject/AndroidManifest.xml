@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 		  package="com.ststudy.client.android.graduationproject"
 		  android:versionName="1.0"
-		  android:versionCode="1004"
+		  android:versionCode="1005"
 		>
 
 	<uses-sdk android:minSdkVersion="18"/>
@@ -23,5 +23,13 @@
 			</intent-filter>
 		</activity>
 		<activity android:name=".activity.MainActivity"/>
+		<activity
+				android:name=".activity.MaiZiCourseActivity"
+				android:theme="@style/SwipeBack"
+				/>
+		<activity
+				android:name=".activity.CoursePlayInfoActivity"
+				android:theme="@style/SwipeBack"
+				/>
 	</application>
 </manifest>

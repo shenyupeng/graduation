@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:background="@color/white"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+		>
+
+	<ListView
+			android:id="@+id/lvCourseDetail"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+	<TextView
+			android:text="我是来自麦子的数据"
+			android:textSize="@dimen/text_size_20"
+			android:textColor="@color/black"
+			android:gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+</LinearLayout>

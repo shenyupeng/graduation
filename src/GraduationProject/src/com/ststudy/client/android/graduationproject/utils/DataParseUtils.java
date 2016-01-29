@@ -1,9 +1,7 @@
 package com.ststudy.client.android.graduationproject.utils;
 
 import com.google.gson.Gson;
-import com.ststudy.client.android.graduationproject.model.CareerCourse;
-import com.ststudy.client.android.graduationproject.model.NewVersion;
-import com.ststudy.client.android.graduationproject.model.NormalCourse;
+import com.ststudy.client.android.graduationproject.model.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,7 +27,7 @@ public class DataParseUtils {
         ArrayList<CareerCourse> _tempArray = new ArrayList<>();
 
         try {
-            if (pJsonObject.has("success") && pJsonObject.get("success").toString().equals("true")) {
+            if (pJsonObject.has("success") && pJsonObject.getBoolean("success")) {
                 JSONArray _jsonArray = pJsonObject.getJSONObject("data").getJSONArray("list");
                 for (int i = 0; i < _jsonArray.length(); i++) {
                     CareerCourse _itemCourse = _gson.fromJson(_jsonArray.get(i).toString(), CareerCourse.class);
@@ -62,6 +60,79 @@ public class DataParseUtils {
 
         } catch (JSONException e) {
             e.printStackTrace();
+        }
+        return _tempArray;
+    }
+
+    /**
+     * 解析课程细节
+     *
+     * @param pJsonObject 从网络中获取的json对象
+     * @return 解析信息对象
+     */
+    public static List<CareerCourseDetail> parseCareerCourseDetail(JSONObject pJsonObject) {
+        ArrayList<CareerCourseDetail> _tempArray = new ArrayList<>();
+        try {
+            if (pJsonObject.has("success") && pJsonObject.getBoolean("success")) {
+                if (pJsonObject.has("data")) {
+                    if (pJsonObject.getJSONObject("data").has("stage")) {
+                        JSONArray _jsonArray = pJsonObject.getJSONObject("data").getJSONArray("stage");
+                        for (int i = 0; i < _jsonArray.length(); i++) {
+                            if (_jsonArray.getJSONObject(i).has("list")) {
+                                JSONArray _tempJsonArray = _jsonArray.getJSONObject(i).getJSONArray("list");
+                                for (int j = 0; j < _tempJsonArray.length(); j++) {
+                                    CareerCourseDetail item = _gson.fromJson(_tempJsonArray.get(j).toString(), CareerCourseDetail.class);
+                                    _tempArray.add(item);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return _tempArray;
+    }
+
+    /**
+     * 解析视频列表信息
+     *
+     * @param pJsonObject 从网络中获取的json对象
+     * @return 数据列表
+     */
+    public static List<VideoItemInfo> parseVideoItemInfo(JSONObject pJsonObject) {
+        List<VideoItemInfo> _tempArray = new ArrayList<>();
+        try {
+            if (pJsonObject.has("success") && pJsonObject.getBoolean("success")) {
+                if (pJsonObject.has("data")) {
+                    JSONObject _jsonObj = pJsonObject.getJSONObject("data");
+                    if (_jsonObj.has("video_list")) {
+                        JSONArray _jsonArray = _jsonObj.getJSONArray("video_list");
+                        for (int i = 0; i < _jsonArray.length(); i++) {
+                            VideoItemInfo _item = _gson.fromJson(_jsonArray.get(i).toString(), VideoItemInfo.class);
+                            _tempArray.add(_item);
+                        }
+                    }
+                }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return _tempArray;
+    }
+
+    public static List<ChaoXingCourse> parseChaoXingList(JSONObject pJsonObject) {
+        List<ChaoXingCourse> _tempArray = new ArrayList<>();
+        if (pJsonObject.has("datas")) {
+            try {
+                JSONArray _jsonArray = pJsonObject.getJSONArray("datas");
+                for (int i = 0; i < _jsonArray.length(); i++) {
+                    _tempArray.add(_gson.fromJson(_jsonArray.getString(i), ChaoXingCourse.class));
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
         return _tempArray;
     }

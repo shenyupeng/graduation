@@ -1,5 +1,6 @@
 package com.ststudy.client.android.graduationproject.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -13,8 +14,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.ststudy.client.android.graduationproject.App;
 import com.ststudy.client.android.graduationproject.Constants;
-import com.ststudy.client.android.graduationproject.L;
 import com.ststudy.client.android.graduationproject.R;
+import com.ststudy.client.android.graduationproject.activity.CoursePlayInfoActivity;
+import com.ststudy.client.android.graduationproject.activity.MaiZiCourseActivity;
 import com.ststudy.client.android.graduationproject.adapter.VideoInfoAdapter;
 import com.ststudy.client.android.graduationproject.model.CareerCourse;
 import com.ststudy.client.android.graduationproject.model.NormalCourse;
@@ -91,7 +93,6 @@ public class VideoItemFragment extends BaseFragment {
                         }
                     } else {
                         mNormalCourseList = DataParseUtils.parseNormalCareer(response);
-                        L.d(mNormalCourseList.size() + "我的长度");
                         for (NormalCourse item : mNormalCourseList) {
                             mVideoList.add(new VideoItem(item.getImg_url(), item.getDesc()));
                         }
@@ -124,17 +125,24 @@ public class VideoItemFragment extends BaseFragment {
     @Override
     protected void findView(View pView) {
         mVideoItemList = (ListView) pView.findViewById(R.id.swipe_target);
-        VideoInfoAdapter adapter = new VideoInfoAdapter(getContext(), mVideoList);
-        mVideoItemList.setAdapter(adapter);
+        mVideoItemList.setAdapter(mInfoAdapter);
+
         mVideoItemList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (mCurrentIndex > 0) {
+                Intent _intent = new Intent();
+                Bundle _bundle = new Bundle();
+                if (0 < mCurrentIndex) {
                     if (1 == mCurrentIndex) {
-                        L.d("课程数为：" + mCareerCourseList.get(position).getClass_count());
+                        _intent.setClass(getContext(), MaiZiCourseActivity.class);
+                        _bundle.putSerializable("data", mCareerCourseList.get(position));
                     } else {
-                        L.d("超星序列ID：" + mNormalCourseList.get(position).getSerieId());
+                        _intent.setClass(getContext(), CoursePlayInfoActivity.class);
+                        _intent.putExtra("type", 2);
+                        _bundle.putSerializable("data", mNormalCourseList.get(position));
                     }
+                    _intent.putExtras(_bundle);
+                    startActivity(_intent);
                 }
             }
         });

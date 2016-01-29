@@ -15,10 +15,13 @@
 	<style name="AppTheme" parent="AppBaseTheme">
 
 		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+
+	<style name="SwipeBack" parent="AppBaseTheme">
 		<!-- 侧滑返回所必须的样式，否则下层Activity黑屏 -->
 		<item name="android:windowIsTranslucent">true</item>
 	</style>
-
+	<!-- 滑动菜单 -->
 	<style name="text_sldingTabTitle">
 		<item name="android:layout_width">wrap_content</item>
 		<item name="android:layout_height">wrap_content</item>
