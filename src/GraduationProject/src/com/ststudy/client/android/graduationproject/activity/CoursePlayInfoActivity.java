@@ -1,5 +1,6 @@
 package com.ststudy.client.android.graduationproject.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,7 +11,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.ststudy.client.android.graduationproject.App;
 import com.ststudy.client.android.graduationproject.Constants;
-import com.ststudy.client.android.graduationproject.L;
 import com.ststudy.client.android.graduationproject.R;
 import com.ststudy.client.android.graduationproject.adapter.VideoListAdapter;
 import com.ststudy.client.android.graduationproject.model.*;
@@ -18,6 +18,7 @@ import com.ststudy.client.android.graduationproject.utils.DataParseUtils;
 import com.ststudy.client.android.ui.swipeback.SwipeBackActivity;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -102,11 +103,18 @@ public class CoursePlayInfoActivity extends SwipeBackActivity {
         mLvCoursePlayInfo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent _intent = new Intent(CoursePlayInfoActivity.this, VideoPlayActivity.class);
+                Bundle _bundle = new Bundle();
                 if (1 == mType) {
-                    L.d(mVideoInfoList.get(position).getVideo_url());
+                    _intent.putExtra("type", 1);
+                    _bundle.putSerializable("data", (Serializable) mVideoInfoList);
                 } else if (2 == mType) {
-                    L.d(mChaoXingList.get(position).getGetVideoUrl());
+                    _intent.putExtra("type", 2);
+                    _bundle.putSerializable("data", (Serializable) mChaoXingList);
                 }
+                _intent.putExtra("position", position);
+                _intent.putExtras(_bundle);
+                startActivity(_intent);
             }
         });
 
