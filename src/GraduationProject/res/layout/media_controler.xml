@@ -7,46 +7,90 @@
 	<LinearLayout
 			android:background="#00F00F"
 			android:layout_alignParentTop="true"
+			android:orientation="horizontal"
 			android:layout_width="match_parent"
 			android:layout_height="@dimen/normal_dp_40"
 			>
 
 		<TextView
 				android:id="@+id/tvVideoTitle"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_size_20"
+				android:gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
 				/>
 	</LinearLayout>
 
 	<LinearLayout
-			android:background="#FF0FF0"
-			android:gravity="center"
-			android:layout_alignParentBottom="true"
 			android:layout_width="match_parent"
-			android:layout_height="@dimen/normal_dp_40"
-			android:orientation="horizontal"
+			android:layout_alignParentBottom="true"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
 			>
 
-		<Button
-				android:id="@+id/btnPlayPre"
-				android:text="上一个"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				/>
+		<RelativeLayout
+				android:background="#F0F98F"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				>
 
-		<Button
-				android:id="@+id/btnPlayPause"
-				android:text="暂停"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				/>
+			<TextView
+					android:id="@+id/tvCurrentTime"
+					android:layout_alignParentStart="true"
+					android:textSize="@dimen/text_size_15"
+					android:textColor="@color/black"
+					android:text="当前时间"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					/>
 
-		<Button
-				android:id="@+id/btnPlayNext"
-				android:text="下一个"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				/>
+			<TextView
+					android:id="@+id/tvTotalTime"
+					android:layout_alignParentEnd="true"
+					android:textSize="@dimen/text_size_15"
+					android:textColor="@color/black"
+					android:text="总时间"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					/>
+
+			<SeekBar
+					android:layout_toEndOf="@id/tvCurrentTime"
+					android:layout_toStartOf="@id/tvTotalTime"
+					android:id="@+id/seekVideo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					/>
+		</RelativeLayout>
+
+		<LinearLayout
+				android:gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/normal_dp_40"
+				android:orientation="horizontal"
+				>
+
+			<Button
+					android:id="@+id/btnPlayPre"
+					android:text="上一个"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					/>
+
+			<Button
+					android:id="@+id/btnPlayPause"
+					android:text="暂停"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					/>
+
+			<Button
+					android:id="@+id/btnPlayNext"
+					android:text="下一个"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					/>
+		</LinearLayout>
 	</LinearLayout>
-
 </RelativeLayout>

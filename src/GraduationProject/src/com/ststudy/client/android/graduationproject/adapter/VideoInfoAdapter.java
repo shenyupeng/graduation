@@ -46,7 +46,11 @@ public class VideoInfoAdapter extends ViewBaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        Glide.with(parent.getContext()).load(mList.get(position).getImg_url()).into(holder.ivCourse);
+        if (null != mList.get(position).getImg_url()) {
+            Glide.with(parent.getContext()).load(mList.get(position).getImg_url()).into(holder.ivCourse);
+        } else {
+            holder.ivCourse.setImageResource(R.drawable.video_test);
+        }
         holder.tvCourseDesc.setText(mList.get(position).getTv_desc());
         return convertView;
     }
