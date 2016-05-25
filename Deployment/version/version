@@ -1,9 +1,11 @@
 {
 	"new_version":{
-		"down_url":"https://raw.githubusercontent.com/shenyupeng/graduation/master/Deployment/apk/GraduationProject.apk",
-		"vc":1007,
+		"down_url":"http://192.168.1.105/app-debug.apk",
+		"vc":0,
 		"is_force":false,
-		"desc":"1.添加本地视频播放\r\n2.添加手势识别\r\n3.添加视频控制代码\r\n4.界面细节优化\r\n5.修复已知BUG\r\n6.增加总数据量提示",
+		"desc":"1、添加本地视频播放\n2、添加手势识别\n3、添加视频控制代码\n4、界面细节优化\n5、修复已知bug",
 		"size":"31.9M"
-	}
+	},
+	"message":"数据加载成功",
+	"success":true
 }
